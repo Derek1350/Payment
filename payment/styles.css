@@ -1,0 +1,248 @@
+.main-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,90vh);
+    justify-content: center;
+    gap: 20px;
+}
+.Info{
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 40px;
+
+}
+.Summary{
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+.mb-3{
+    /* top: 50px;
+    left: 58px; */
+    width: 360px;
+}
+#cart table{
+    width: 50%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 50px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(4){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(5){
+    width: 100px;
+    text-align: center;
+}
+#cart table thead{
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+#cart-add .mb-3{
+    width: 500px;
+    margin: 50px 5%;
+}
+#cart-add .sub-total{
+    margin: 50px 50px;
+}
+#cart-add .sub-total table{
+    width: 50%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart-add .sub-total table tr:nth-child(3){
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+/* Global */
+* {
+    box-sizing: border-box;
+}
+ 
+body,
+html {
+    height: 100%;
+    min-height: 100%;
+}
+ 
+body {
+    font-family: 'Roboto',
+    sans-serif;
+    margin: 0;
+    background-color: #e7e7e7;
+}
+/* Credit Card */
+.credit-card {
+    position: relative;
+    right: 100px;
+    left: 20px;
+    width: 400px;
+    height: 500px;
+    margin: 60px auto 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+}
+.form-header {
+    height: 60px;
+    padding: 20px 30px 0;
+    border-bottom: 1px solid #e1e8ee;
+}
+ 
+.form-body {
+    height: 340px;
+    padding: 30px 30px 20px;
+}
+/* Title */
+.title {
+    font-size: 18px;
+    margin: 0;
+    color: #5e6977;
+}
+/* Common */
+.card-number,
+.cvv-input input,
+.month select,
+.year select {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+ 
+.card-number,
+.month select,
+.year select {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+ 
+.card-number,
+.cvv-details,
+.cvv-input input,
+.month select,
+.year select {
+    opacity: .7;
+    color: #86939e;
+}
+/* Card Number */
+.card-number {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+}
+/* Date Field */
+.month select,
+.year select {
+    width: 145px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+    background: url('caret.png') no-repeat;
+    background-position: 85% 50%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+ 
+.month select {
+    float: left;
+}
+ 
+.year select {
+    float: right;
+}
+/* Card Verification Field */
+.cvv-input input {
+    float: left;
+    width: 145px;
+    height: 40px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+    background: #fff;
+}
+ 
+.cvv-details {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    float: right;
+    margin-bottom: 20px;
+}
+ 
+.cvv-details p {
+    margin-top: 6px;
+}
+/* Buttons Section */
+.btn-info,
+.btn-success {
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    border-color: transparent;
+    border-radius: 6px;
+}
+ 
+.btn-success {
+    margin-bottom: 10px;
+    background: #7dc855;
+}
+ 
+.btn-info a,
+.btn-success a {
+    text-decoration: none;
+}
+ 
+.btn-success a {
+    color: #fff;
+}
+ 
+.btn-info a {
+    color: rgba(242, 242, 242, .7);
+}
+ 
+.btn-info {
+    padding-right: 95px;
+    background: url('./images/paypal.svg') no-repeat 65% 56% white ;
+    width: 100%;
+    height: 50px;
+    background-size: 30%;
+    background-position: 50%;
+    
+}
